@@ -1,0 +1,94 @@
+.section.team  {
+  background-color: var(--another-bg-color);
+
+  .card {
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  .section-title{
+    margin-bottom: 50px;
+  }
+  .section-list {
+    display: flex;
+  }
+  .section-list {
+    display: flex;
+  }
+  .section-list-card {
+    background-color: var(--primary-bg-color);
+    margin-right: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  .footer-card {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  
+    .name {
+      margin-bottom: 10px;
+    }
+  
+    .post {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+
+.bottom-card {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  .title {
+    margin-bottom: 4px;
+  }
+}
+
+
+.footer-card-links {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.footer-card-icon {
+  fill: currentColor;
+}
+
+.footer-card-link {
+  margin-left: 10px;
+
+  &:first-child {
+    margin-left: 0px;
+  }
+
+  .link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--main-icons-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:focus,
+    &:hover {
+      color: var(--another-text-color);
+      background-color: var(--accent-text-color);
+    }
+  }
+}
+
+
+
+
