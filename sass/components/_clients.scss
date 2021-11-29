@@ -2,14 +2,26 @@
   margin-bottom: 50px;
 }
 
+.section.clients .section-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .company-item {
   display: flex;
   margin-left: 30px;
   width: 170px;
   height: 92px;
-
-  &:first-child {
-    margin-left: 0px;
+  @media screen and (max-width:767px){
+    margin-bottom: 30px;
+    &:nth-last-child(-n + 2){
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width:1200px){
+    &:first-child {
+      margin-left: 0px;
+    }
   }
 }
 
