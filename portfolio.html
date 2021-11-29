@@ -47,6 +47,43 @@
             >
           </li>
         </ul>
+        <button class="page-header__button" data-mobile-menu-open>
+          <svg class="page-header__icon" width="40" height="40" >
+            <use href="./images/icons.svg#icon-menu" ></use>
+          </svg>
+        </button>
+        <div class="modal-menu is-visible" data-mobile-menu>
+          <button class="modal-menu__button" data-mobile-menu-close>
+            <svg class="page-header__closeicon" width="40" height="40">
+              <use href="./images/icons.svg#icon-closemenu" ></use>
+            </svg>
+          </button>
+          <div class="wrapper">
+            <ul class="modal-menu__list list">
+              <li class="modal-menu__list-item"><a href="./index.html" class="link ">Студия</a></li>
+              <li class="modal-menu__list-item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
+              <li class="modal-menu__list-item"><a href="" class="link">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="wrapper">
+            <ul class="modal-menu__contacts-list list">
+              <li class="modal-menu__contacts">
+                <a href="tel:+380961111111" class="link number">
+                  +38 096 111 11 11</a>
+              </li>
+              <li class="modal-menu__contacts">
+                <a lang="en" href="mailto:info@devstudio.com" class="link">
+                  info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="modal-menu__sociallinks list">
+              <li class="modal-menu__sociallink"><a href="" class="link">Instagram</a></li>
+              <li class="modal-menu__sociallink"><a href="" class="link">Twitter</a></li>
+              <li class="modal-menu__sociallink"><a href="" class="link">Facebook</a></li>
+              <li class="modal-menu__sociallink"><a href="" class="link">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -349,5 +386,9 @@
         </div>
       </div>
     </footer>
+
+
+    <script src="./js/mobile-menu.js"></script>
+
   </body>
 </html>

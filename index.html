@@ -47,14 +47,14 @@
             >
           </li>
         </ul>
-        <button class="page-header__button">
+        <button class="page-header__button" data-mobile-menu-open>
           <svg class="page-header__icon" width="40" height="40" >
             <use href="./images/icons.svg#icon-menu" ></use>
           </svg>
         </button>
-        <div class="modal-menu">
-          <button class="modal-menu__button">
-            <svg width="40" height="40">
+        <div class="modal-menu is-visible" data-mobile-menu>
+          <button class="modal-menu__button" data-mobile-menu-close>
+            <svg class="page-header__closeicon" width="40" height="40">
               <use href="./images/icons.svg#icon-closemenu" ></use>
             </svg>
           </button>
@@ -502,5 +502,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
