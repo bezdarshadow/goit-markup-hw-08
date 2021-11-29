@@ -24,9 +24,43 @@
     margin-top: 9px;
   }
   .container {
-    display: flex;
-    align-items: baseline;
+
+    .container-address{
+      @include mq(mobile-only){
+        margin-bottom: 60px;
+      }
+    }
+
+    .container-footerlinks{
+      @include mq(mobile-only){
+        margin-bottom: 60px;
+      }
+    }
+
+    @include mq(mobile-only){
+      text-align: center;
+    }
+
+    @include mq(desktop){
+      display: flex;
+      align-items: baseline;
+    }
   }
+
+  .top-container{
+    @include mq(tablet-only){
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    }
+    @include mq(desktop){
+      display: flex;
+      align-items: baseline;
+    }
+  }
+
+
+
 }
 
 .footer-link {
@@ -58,7 +92,13 @@
 }
 
 .container-footerlinks {
-  margin-left: 70px;
+  @include mq(desktop){
+    margin-left: 70px;
+  }
+  @include mq(tablet-only){
+    text-align: center;
+    margin-left: 163px;
+  }
 
   .title {
     font-size: 14px;
@@ -67,6 +107,15 @@
     text-transform: uppercase;
     color: var(--another-text-color);
     margin-bottom: 20px;
+  }
+
+  .section-list{
+    @include mq(mobile){
+      display: flex;
+      justify-content: center;
+    }
+
+    
   }
 }
 
@@ -86,18 +135,34 @@
 
 .email-form {
   flex-direction: column;
+  @include mq(mobile-only){
+    margin-bottom: 20px;
+  }
+  @include mq(tablet-only){
+    margin-bottom: 20px;
+  }
 }
 
 .container-form {
-  align-items: flex-end;
-  margin-left: 93px;
-  display: flex;
-  width: 570px;
+  @include mq(tablet-only){
+    justify-content: center;
+    display: flex;
+    text-align: center;
+  }
+
+  @include mq(desktop){
+    align-items: flex-end;
+    margin-left: 93px;
+    display: flex;
+    width: 570px;
+  }
 }
 
 .form-footer {
-  display: flex;
-  align-items: flex-end;
+  @include mq(desktop){
+    display: flex;
+    align-items: flex-end;
+  }
 }
 
 .form-button {
@@ -125,7 +190,15 @@
   &:focus {
     background-color: var(--hero-btn-focus);
   }
-
+  
+  @include mq(mobile-only){
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include mq(tablet-only){
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 
@@ -139,14 +212,17 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  @include mq(desktop){
+    margin-bottom: 10px;
+  }
 }
 
 .input-form-footer {
   display: inline-block;
   background-color: transparent;
   height: 50px;
-  width: 358px;
+  width: 450px;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
@@ -160,6 +236,10 @@
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: var(--address-text-color);
+  }
+
+  @include mq(desktop){
+    width: 358px;
   }
 }
 

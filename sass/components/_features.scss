@@ -1,5 +1,6 @@
 .section.features {
-  @media screen and (min-width:1200px) {
+
+  @include mq(desktop){
     padding-bottom: 0;
   }
 
@@ -11,14 +12,25 @@
 .section-title {
   margin: 0;
   color: var(--secondary-text-color);
-  font-size: 36px;
-  line-height: 1.2;
   text-align: center;
+  font-size: 28px;
+  line-height: 1.14;
+  @include mq(desktop){
+    font-size: 36px;
+    line-height: 1.2;
+
+  }
+}
+.section.features .section-list{
+  @include mq(tablet-only){
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .section.features .section-list-item {
-  @media screen and (max-width:767px){
-    margin-bottom: 30px;
+
+  @include mq(mobile-only){
     &:last-child{
       margin-bottom: 0px;
     }
@@ -28,7 +40,15 @@
     } 
   }
 
-  @media screen and (min-width:1200px){
+  @include mq(tablet){
+    width: 354px;
+  }
+  @include mq(tablet-only){
+    &:nth-child(odd){
+      margin-right: 30px;
+    }
+  }
+  @include mq(desktop){
     margin-left: 30px;
     width: 270px;
   
@@ -36,6 +56,7 @@
       margin-left: 0px;
     }
   }
+
 }
 
 .features-background-icon {
