@@ -1345,7 +1345,6 @@ ul {
   .modal {
     min-width: 528px;
     min-height: 581px;
-    top: 50%;
   }
 }
 
@@ -1360,7 +1359,6 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  top: 8px;
   right: 8px;
   width: 30px;
   height: 30px;
@@ -1375,6 +1373,12 @@ ul {
 
 .modal .button-modal:focus, .modal .button-modal:hover {
   color: var(--accent-text-color);
+}
+
+@media (min-width: 1200px) {
+  .modal .button-modal {
+    top: 8px;
+  }
 }
 
 .close-btn {
