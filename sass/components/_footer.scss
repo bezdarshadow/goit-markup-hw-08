@@ -51,6 +51,7 @@
     @include mq(tablet-only){
     display: flex;
     justify-content: center;
+    align-items: baseline;
     margin-bottom: 60px;
     }
     @include mq(desktop){
