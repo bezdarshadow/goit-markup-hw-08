@@ -1014,13 +1014,12 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
     margin-bottom: 60px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -1078,7 +1077,6 @@ ul {
 @media (min-width: 768px) and (max-width: 1199.98px) {
   .container-footerlinks {
     text-align: center;
-    margin-left: 163px;
   }
 }
 

@@ -50,9 +50,9 @@
   .top-container{
     @include mq(tablet-only){
     display: flex;
-    justify-content: center;
     align-items: baseline;
     margin-bottom: 60px;
+    justify-content: space-around;
     }
     @include mq(desktop){
       display: flex;
@@ -98,7 +98,6 @@
   }
   @include mq(tablet-only){
     text-align: center;
-    margin-left: 163px;
   }
 
   .title {
