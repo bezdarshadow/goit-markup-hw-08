@@ -10,18 +10,28 @@
 
 .company-item {
   display: flex;
-  margin-left: 30px;
+  /* margin-left: 30px; */
   width: 210px;
   height: 92px;
+
+
+  @media screen and (min-width:450px) and (max-width: 767px) {
+    &:nth-last-child(-n + 2){
+      margin-bottom: 0;
+    }
+  }
+
+  @include mq(mobile){
+    margin-left: 30px;
+
+  }
+   
 
   @include mq(mobile-only){
     &:nth-child(odd){
       margin-left: 0;
     }
     margin-bottom: 30px;
-    &:nth-last-child(-n + 2){
-      margin-bottom: 0;
-    }
 
   }
   @include mq(tablet-only){

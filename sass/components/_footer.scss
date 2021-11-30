@@ -110,11 +110,13 @@
   }
 
   .section-list{
-    @include mq(mobile){
+    display: flex;
+    justify-content: center;
+   /*  @include mq(mobile){
       display: flex;
       justify-content: center;
     }
-
+ */
     
   }
 }
@@ -222,7 +224,7 @@
   display: inline-block;
   background-color: transparent;
   height: 50px;
-  width: 450px;
+  max-width: 450px;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
@@ -237,7 +239,9 @@
     letter-spacing: 0.03em;
     color: var(--address-text-color);
   }
-
+  @include mq(tablet){
+    width: 450px;
+  }
   @include mq(desktop){
     width: 358px;
   }

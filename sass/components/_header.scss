@@ -244,6 +244,7 @@
 .modal-menu__sociallinks{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .modal-menu__sociallink{
