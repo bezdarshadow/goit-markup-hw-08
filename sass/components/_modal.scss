@@ -91,6 +91,10 @@
     align-items: center;
   }
 
+  &:focus-within .label-modal-form{
+    color: var(--accent-text-color);
+  }
+
   &:focus-within .input-modal-form {
     border: 1px solid var(--accent-text-color);
   }
@@ -110,6 +114,7 @@
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--main-text-color);
+
 }
 
 .input-modal-form {
