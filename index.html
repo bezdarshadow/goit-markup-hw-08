@@ -24,8 +24,12 @@
         <a class="logo" href="./index.html">Web<span class="dark">Studio</span></a>
         <nav class="site-nav">
           <ul class="site-nav__list list">
-            <li class="site-nav__list-item"><a href="./index.html" class="link current">Студия</a></li>
-            <li class="site-nav__list-item"><a href="./portfolio.html" class="link ">Портфолио</a></li>
+            <li class="site-nav__list-item">
+              <a href="./index.html" class="link current">Студия</a>
+            </li>
+            <li class="site-nav__list-item">
+              <a href="./portfolio.html" class="link">Портфолио</a>
+            </li>
             <li class="site-nav__list-item"><a href="" class="link">Контакты</a></li>
           </ul>
         </nav>
@@ -48,33 +52,35 @@
           </li>
         </ul>
         <button class="page-header__button" data-mobile-menu-open>
-          <svg class="page-header__icon" width="40" height="40" >
-            <use href="./images/icons.svg#icon-menu" ></use>
+          <svg class="page-header__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
         <div class="modal-menu is-visible" data-mobile-menu>
           <button class="modal-menu__button" data-mobile-menu-close>
             <svg class="page-header__closeicon" width="40" height="40">
-              <use href="./images/icons.svg#icon-closemenu" ></use>
+              <use href="./images/icons.svg#icon-closemenu"></use>
             </svg>
           </button>
           <div class="wrapper">
             <ul class="modal-menu__list list">
-              <li class="modal-menu__list-item"><a href="./index.html" class="link current">Студия</a></li>
-              <li class="modal-menu__list-item"><a href="./portfolio.html" class="link ">Портфолио</a></li>
+              <li class="modal-menu__list-item">
+                <a href="./index.html" class="link current">Студия</a>
+              </li>
+              <li class="modal-menu__list-item">
+                <a href="./portfolio.html" class="link">Портфолио</a>
+              </li>
               <li class="modal-menu__list-item"><a href="" class="link">Контакты</a></li>
             </ul>
           </div>
           <div class="wrapper">
             <ul class="modal-menu__contacts-list list">
               <li class="modal-menu__contacts">
-                <a href="tel:+380961111111" class="link number">
-                  +38 096 111 11 11</a>
+                <a href="tel:+380961111111" class="link number"> +38 096 111 11 11</a>
               </li>
               <li class="modal-menu__contacts">
-                <a lang="en" href="mailto:info@devstudio.com" class="link">
-                  info@devstudio.com</a>
-                </li>
+                <a lang="en" href="mailto:info@devstudio.com" class="link"> info@devstudio.com</a>
+              </li>
             </ul>
             <ul class="modal-menu__sociallinks list">
               <li class="modal-menu__sociallink"><a href="" class="link">Instagram</a></li>
@@ -149,16 +155,25 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list">
             <li class="list-pictures">
-              <img src="./images/whatare.jpg" alt="Человек пишет код" width="370" />
+              <img 
+              srcset="./images/competence/whatare_lg.jpg 1x, ./images/competence/whatare_lg@2x.jpg x2" 
+              src="./images/competence/whatare_lg.jpg" 
+              alt="Человек пишет код" 
+              width="370" />
               <h3 class="description">Десктопные приложения</h3>
             </li>
             <li class="list-pictures">
-              <img src="./images/we.jpg" alt="Человек держит в руке телефон" width="370" />
+              <img 
+              srcset="./images/competence/we_lg.jpg 1x, ./images/competence/we_lg@2x.jpg x2" 
+              src="./images/competence/we_lg.jpg" 
+              alt="Человек держит в руке телефон" 
+              width="370" />
               <h3 class="description">Мобильные приложения</h3>
             </li>
             <li class="list-pictures">
               <img
-                src="./images/doing.jpg"
+                srcset="./images/competence/doing_lg.jpg 1x, ./images/competence/doing_lg@2x.jpg x2"
+                src="./images/competence/doing_lg.jpg"
                 alt="Человек держит в руке планшет, где изображена палитра цветов"
                 width="370"
               />
@@ -172,7 +187,7 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="section-list list">
             <li class="section-list-card">
-              <img class="photo" src="./images/igor.jpg" alt="Мужчина в очках" width="270" />
+              <img class="photo" src="./images/igor.jpg" alt="Мужчина в очках"  />
               <div class="footer-card">
                 <h3 class="name">Игорь Демьяненко</h3>
                 <p class="post" lang="en">Product Designer</p>
@@ -209,7 +224,7 @@
               </div>
             </li>
             <li class="section-list-card">
-              <img class="photo" src="./images/olga.jpg" alt="Женщина в очках" width="270" />
+              <img class="photo" src="./images/olga.jpg" alt="Женщина в очках"  />
               <div class="footer-card">
                 <h3 class="name">Ольга Репина</h3>
                 <p class="post" lang="en">Product Developer</p>
@@ -246,7 +261,7 @@
               </div>
             </li>
             <li class="section-list-card">
-              <img class="photo" src="./images/nikolay.jpg" alt="Улыбающийся мужчина" width="270" />
+              <img class="photo" src="./images/nikolay.jpg" alt="Улыбающийся мужчина"  />
               <div class="footer-card">
                 <h3 class="name">Николай Тарасов</h3>
                 <p class="post" lang="en">Marketing</p>
@@ -287,7 +302,7 @@
                 class="photo"
                 src="./images/mihail.jpg"
                 alt="Улыбающийся мужчина в очках"
-                width="270"
+               
               />
               <div class="footer-card">
                 <h3 class="name">Михаил Ермаков</h3>
@@ -420,7 +435,7 @@
                 </a>
               </li>
             </ul>
-          </div>         
+          </div>
         </div>
         <div class="container-form">
           <form class="form-footer">
@@ -490,16 +505,17 @@
           <div class="field">
             <label class="agreement">
               <input class="checkbox" type="checkbox" />
-              <svg class="icon-check" width="16" height="15" >
-                <use href="./images/icons.svg#icon-check" ></use> 
+              <svg class="icon-check" width="16" height="15">
+                <use href="./images/icons.svg#icon-check"></use>
               </svg>
-              Соглашаюсь с рассылкой и принимаю <a class="agreement-link" href="">Условия договора</a></label>
+              Соглашаюсь с рассылкой и принимаю
+              <a class="agreement-link" href="">Условия договора</a></label
+            >
           </div>
           <div class="button-modal-container">
-            <button class=" button modal-button" type="submit">Отправить</button>
+            <button class="button modal-button" type="submit">Отправить</button>
           </div>
         </form>
-        
       </div>
     </div>
 
