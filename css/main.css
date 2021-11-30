@@ -1323,7 +1323,7 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
-  top: 55%;
+  top: 50%;
   left: 50%;
   padding: 40px;
   -webkit-transform: translate(-50%, -50%) scale(1);
@@ -1689,6 +1689,21 @@ ul {
 
 .portfolio-gallery-item:last-child {
   margin-bottom: 0px;
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .portfolio-gallery-item:nth-child(1) .bottom-card {
+    min-height: 146px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .portfolio-gallery-item {
+    width: 354px;
+  }
+  .portfolio-gallery-item:nth-child(odd) {
+    margin-right: 30px;
+  }
 }
 
 @media (min-width: 1200px) {

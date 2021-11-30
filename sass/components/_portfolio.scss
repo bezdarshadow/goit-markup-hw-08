@@ -75,6 +75,20 @@
     margin-bottom: 0px;
   }
 
+  @include mq(tablet-only){
+    &:nth-child(1) .bottom-card{
+      min-height: 146px;
+    }
+  }
+  
+  @include mq(tablet-only){
+    width: 354px;
+
+    &:nth-child(odd){
+      margin-right: 30px;
+    }
+  }
+
   @include mq(desktop){
   
     margin-right: 30px;
