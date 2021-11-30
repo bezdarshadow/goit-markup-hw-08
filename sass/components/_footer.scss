@@ -239,6 +239,7 @@
     letter-spacing: 0.03em;
     color: var(--address-text-color);
   }
+
   @include mq(tablet){
     width: 450px;
   }
